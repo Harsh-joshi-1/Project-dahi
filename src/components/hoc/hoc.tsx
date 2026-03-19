@@ -1,13 +1,13 @@
 'use client';
 import { ReactLenis } from 'lenis/react';
-
-import Footer from '../marginals/footer';
 import Navbar from '../marginals/navbar';
+import Footer from '../marginals/footer';
 
 function HOC({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Navbar />
+
       <ReactLenis
         root
         options={{
@@ -18,6 +18,7 @@ function HOC({ children }: { children: React.ReactNode }) {
       >
         {children}
       </ReactLenis>
+
       <Footer />
     </>
   );
